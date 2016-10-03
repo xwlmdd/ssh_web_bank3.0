@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*复位*/
+body
+,
+div
+,
+ul
+,
+li
+,
+{
+margin
+:
+0;padding
+:
+0;
+}
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+body {
+	width: 100%;
+	height: 100%; /*position: relative;*/
+}
+
+.header {
+	width: 100%;
+	margin: 30px auto 30px;
+	text-align: center;
+	border-bottom: 3px solid #000;
+}
+
+.head {
+	padding-left: 890px;
+}
+
+.head a {
+	font: 18px "楷体";
+	font-weight: bold;
+}
+
+.head a:hover {
+	color: red;
+}
+
+.main {
+	width: 40%;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.02);
+	text-align: center;
+	overflow: hidden;
+	padding: 0 0px 50px 0px;
+}
+
+.main p {
+	margin-top: 40px;
+	font: 24px "楷体";
+	font-weight: bold;
+}
+
+form {
+	
+}
+
+form label {
+	font: 20px "楷体"; /*font-weight: bold;*/
+}
+
+form input {
+	width: 250px;
+	height: 25px;
+}
+
+.current {
+	width: 80px;
+	height: 25px;
+	font: 18px "楷体";
+}
+
+ul {
+	
+}
+
+ul li {
+	width: 100px;
+	height: 40px;
+	background: #B10019;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	margin: 60px 0 0 65px;
+}
+
+ul li a {
+	color: #fff;
+	font: 24px "楷体";
+}
+
+ul li a:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+.foot {
+	width: 100%;
+	text-align: center;
+	font: 10px "宋体";
+	position: absolute;
+	bottom: 0.1px;
+	color: #666;
+}

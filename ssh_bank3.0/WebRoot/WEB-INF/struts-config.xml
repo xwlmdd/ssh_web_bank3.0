@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="moneybean" type="com.cx.bank.model.MoneyActionForm"></form-bean>
+	</form-beans>
+
+
+	<action-mappings>
+		<!-- 配置一个动态的action，根据parameter的值来决定调用action中的那个方法 -->
+		<action path="/BankAction"
+			type="org.springframework.web.struts.DelegatingActionProxy" name="moneybean"
+			parameter="method" scope="request">
+		</action>
+	</action-mappings>
+
+	<message-resources parameter="MessageResources"></message-resources>
+
+
+</struts-config>
+
